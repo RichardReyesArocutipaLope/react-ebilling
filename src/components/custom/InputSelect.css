@@ -1,0 +1,109 @@
+.inputSelect {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  position: relative;
+  order: 5;
+}
+
+.inputSelect--error .inputSelect__selected {
+  border-color: #d5427a;
+}
+
+.inputSelect__container {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  background-color: var(--bg-two-color-white);
+  color: var(--text-ten-color-black);
+  width: 100%;
+  border: 1px solid var(--bg-seven-color-white);
+  border-radius: .5rem;
+  font-size: 1rem;
+
+  box-shadow: -1px -1px 20px 1px var(--bg-seven-color-white);
+  -webkit-box-shadow: -1px -1px 20px -2px var(--bg-seven-color-white);
+  -moz-box-shadow: -1px -1px 20px -2px var(--bg-seven-color-white);
+  transform: scale(1.03);
+
+  order: 1;
+  top: calc(100% + 0.5rem);
+  position: absolute;
+  z-index: 20;
+
+}
+
+.inputSelect__selected {
+  background-color: var(--bg-two-color-white);
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+  padding: 0.3rem .7rem;
+  color: var(--text-ten-color-black);
+  border: 1px solid var(--bg-six-color-white);
+  box-shadow: 0px 0px 10px 0px var(--bg-four-color-white);
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.inputSelect__selected--placeholder {
+  color: var(--text-ten-color-black);
+}
+
+.inputSelect__selected::after {
+  content: '';
+
+  
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  right: 0;
+  top: 0;
+
+  transition: all 0.4s;
+}
+
+.inputSelect__container--active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.inputSelect__container--active + .inputSelect__selected {
+  border-color: var(--bg-six-color-white);
+}
+
+.inputSelect__container--active + .inputSelect__selected::after {
+  transform: rotateX(180deg);
+}
+
+.inputSelect__option,
+.inputSelect__selected {
+  cursor: pointer;
+}
+
+.inputSelect__option:hover {
+  background: var(--bg-four-color-white);
+}
+
+.inputSelect label {
+  padding: 0.8rem 1rem;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.inputSelect__radio {
+  display: none;
+}
+
+.inputSelect__radio:checked + label {
+  background-color: var(--bg-checked);
+}

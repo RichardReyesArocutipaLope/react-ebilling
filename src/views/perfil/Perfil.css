@@ -1,0 +1,74 @@
+.perfil{
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.perfil__ruc{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--text-nine-color-black);
+}
+
+.perfil__ruc p{
+    width: 7.95rem;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+}
+.perfil__ruc img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.perfil__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4vh;
+    gap: .5rem;
+
+}
+.perfil__info-photo{
+    width: 7rem;
+    height: 7rem;
+}
+.perfil__info-name{
+    padding: .2rem .8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    background-color: var(--bg-nine-color-white);
+    color: var(--text-alternative-one-color-white);
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 2px 3px var(--shadow-nine-color);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.perfil__help{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .2rem;
+}
+.perfil__help a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-nine-color-black);
+}
+.perfil__help .perfil__help-company{
+    font-size: 1.2rem;
+    font-weight: 800;
+}

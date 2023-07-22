@@ -1,0 +1,19 @@
+
+
+
+.input-radio{
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+.input-radio__label{
+    font-size: 1rem;
+    color: var(--text-eight-color-black);
+    padding-left: .7rem;
+    cursor: pointer;
+}
+
+.content-input{
+    display: flex;
+    align-items: center;
+}

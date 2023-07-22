@@ -1,0 +1,17 @@
+.ContentInput{
+    display: flex;
+}
+.contentInput__label{
+    background-color: var(--bg-four-color-white);
+    color: var(--text-eight-color-black);
+    box-shadow: 0px 0px 10px 0px var(--bg-four-color-white);
+    border: 1px solid var(--bg-six-color-white);
+    border-right: none;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+    padding: 0.3rem .7rem;
+    font-size: 1rem;
+    order: 1;
+    width: 13rem;
+    overflow: hidden;
+}

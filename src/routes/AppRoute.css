@@ -1,0 +1,32 @@
+.loading{
+    min-height: 100vh;
+    background-color: #101149;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.loading__img{
+    width: 4rem;
+    height: 4rem;
+    animation-name: loadingxd;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(0deg);
+  }
+  
+@keyframes loadingxd {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+}
+.loading__description{
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 1rem;
+}

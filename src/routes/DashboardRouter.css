@@ -1,0 +1,57 @@
+.catalogo__container{
+    display: flex;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 7px 3px var(--shadow-nine-color);
+    /* revisar arriba */
+    background-color: var(--bg-one-color-white);
+    height: 100%;
+    overflow: hidden;
+}
+
+.perfil__container{
+    width: 0;
+    overflow: hidden;
+    transition: width .4s;
+    transition-timing-function: ease-in-out;
+    height: 100%;
+    position: relative;
+    z-index: var(--z-index-30)
+}
+.perfil__container.active{
+    width: 12.5rem;
+}
+.perfil__wrapper{
+    width: 12.5rem;
+    height: 100%;
+    background-color: var(--bg-two-color-white);
+}
+
+
+.option__container{
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+
+.active-perfil{
+    position: absolute;
+    top: 50%;
+    left: -.3rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: var(--z-index-20)
+}
+.active-perfil span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-nine-color-white);
+    color: rgb(245, 245, 245);
+    font-size: 1.8rem;
+    padding: .3rem .2rem .3rem 0rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.active-perfil--rotate svg{
+    transform: rotate(-180deg) translateX(-12%);
+}

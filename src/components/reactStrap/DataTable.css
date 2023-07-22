@@ -1,0 +1,80 @@
+
+/* datatable: tabla de contenido principal */
+.data-table{
+
+}
+.data-table__search{
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+.data-table__search-input{
+}
+.data-table__main{
+    border-radius: .5rem;
+    padding: .7rem;
+    background-color: var(--bg-one-color-white);
+    box-shadow: 0px 0px 5px 1px  var(--shadow-twentythree-color);
+    height: 35.59rem;
+}
+/* clase de reactstrap */
+.table{
+
+}
+/*  */
+/*  */
+
+/*  */
+.data-table__actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-button{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    padding: .2rem .5rem;
+    color: rgb(245, 245, 245);
+    margin: 0 .2rem;
+    border-radius: var(--border-three-radius);
+    box-shadow: 0px 0px 5px var(--shadow-eighteen-color);
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .2s;
+    user-select: none;
+    font-size: 1.1rem;
+}
+
+.pagination-button--delete{
+    background-color: rgb(230, 0, 0);
+}
+.pagination-button--edit{
+    background-color: rgb(243, 170, 0);
+}
+.pagination-button--arrow{
+    background-color: var(--bg-ten-color-white);
+}
+.pagination-button--number{
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--bg-ten-color-white);
+}
+.pagination-button:hover{
+    box-shadow: 0px 0px 5px var(--shadow-twelve-color);
+    transform: scale(1.12);
+    color: rgb(255, 255, 255);
+}
+.pagination-button.active{
+    box-shadow: 0px 0px 10px 2px var(--shadow-twelve-color);
+    background-color: var(--bg-seven-color-black);
+    transform: scale(1.12);
+    color: rgb(255, 255, 255);
+}
+.data-table__footer{
+    margin-top: 1.3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+/*  */

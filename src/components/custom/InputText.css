@@ -1,0 +1,36 @@
+.InputText {
+  background-color: var(--bg-two-color-white);
+  color: var(--text-ten-color-black);
+  box-shadow: 0px 0px 10px 0px var(--bg-four-color-white);
+  border: 1px solid var(--bg-six-color-white);
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+  padding: 0.3rem .7rem;
+  font-size: 1rem;
+  flex-grow: 1;
+  order: 5;
+  z-index: 10;
+}
+
+.InputText::placeholder {
+  color: #bbbfce;
+}
+
+.InputText:focus {
+  outline: none;
+  border-color: var(--bg-seven-color-white);
+  box-shadow: 0px 0px 15px 1px var(--bg-six-color-white);
+  transform: scaleY(1.1);
+}
+.InputText:focus + label{
+  color: var(--text-six-color-black);
+  font-weight: 600;
+  transform: scaleY(1.1);
+  border-color: var(--bg-seven-color-white);
+  box-shadow: 0px 0px 15px 1px var(--bg-six-color-white);
+}
+
+.InputText--error,
+.InputText--error:focus {
+  border-color: #d5427a;
+}

@@ -1,0 +1,5 @@
+.main-wrapper{
+    padding: .8rem;
+    height: 100vh;
+    background-color: var(--bg-five-color-white);
+}

@@ -1,0 +1,42 @@
+.input-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-switch__input {
+  display: none;
+}
+
+.input-switch__label {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: #888;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 100ms linear;
+}
+
+.input-switch__label:before {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: left 100ms linear;
+}
+
+.input-switch__input:checked + .input-switch__label {
+  background-color: #00acee;
+}
+
+.input-switch__input:checked + .input-switch__label:before {
+  left: 22px;
+}

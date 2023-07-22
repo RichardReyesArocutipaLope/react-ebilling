@@ -1,0 +1,27 @@
+https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
+
+Tipos
+
+Cambios relevantes
+
+    feat:  Confirma, que agrega una nueva característica
+    fix:  Commits, que corrige un error
+refactor:  Confirmaciones, que reescriben / reestructuran su código, sin embargo, no cambian ningún comportamiento
+    perf:  Las confirmaciones son confirmaciones especiales que mejoran el rendimientorefactor
+style:  Confirmaciones, que no afectan al significado (espacio en blanco, formato, punto y coma faltante, etc.)
+test:  Confirmaciones, que agregan pruebas faltantes o corrigen pruebas existentes
+docs:  Confirmaciones, que afectan solo a la documentación
+build:  Confirmaciones, que afectan a componentes de compilación como herramienta de compilación, canalización ci, dependencias, versión del proyecto, ...
+ops:  Confirmaciones, que afectan a componentes operativos como infraestructura, implementación, backup, recuperación, ...
+chore:  Confirmaciones diversas, por ejemplo, modificación .gitignore
+
+Ejemplos
+
+- feat(shopping cart): add the amazing button
+- feat: remove ticket list endpoint
+- fix: add missing parameter to service call
+- build(release): bump version to 1.0.0
+- build: update dependencies
+- refactor: implement calculation method as recursion
+- style: remove empty line
+-

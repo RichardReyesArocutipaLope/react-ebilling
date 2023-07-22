@@ -1,0 +1,21 @@
+
+//---------------------------------------------------
+//root
+$link-hover-color: var(--text-one-color-black);
+$link-color: var(--text-one-color-black);
+//---------------------------------------------------
+
+//---------------------------------------------------
+//nav-tabs
+$nav-tabs-border-width:0px;
+//---------------------------------------------------
+
+//---------------------------------------------------
+//nav-tabs
+$table-color: var(--text-eight-color-black);
+$table-border-color: var(--bg-five-color-white);
+$table-hover-bg: var(--bg-three-color-white);
+//---------------------------------------------------
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

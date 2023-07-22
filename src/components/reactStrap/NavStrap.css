@@ -1,0 +1,55 @@
+.nav-strap{
+    background-color: var(--bg-two-color-white);
+    position: relative;
+    z-index: var(--z-index-30);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link{
+    display: inline-block;
+    padding: .3rem .8rem;
+    color: var(--text-five-color-black);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    margin-top: .2rem;
+    margin-right: .2rem;
+    font-size: 1.1rem;
+}
+.nav__link:hover{
+    background-color: var(--bg-three-color-white);
+}
+.nav__link.active{
+    background-color: var(--bg-four-color-white);
+}
+
+.nav__options{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 .2rem;
+}
+.nav__icon-option{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+    color: rgb(233, 233, 233);
+    background-color: var(--text-eleven-color-black);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px var(--shadow-seventeen-color);
+    cursor: pointer;
+}
+.nav__icon-option--off{
+    background-color: rgb(210, 0, 0);
+}
+.nav__icon-option--dark-mode{
+    background-color: rgb(18, 74, 133);
+}
+.nav__icon-option:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px var(--shadow-fifteen-color);
+}
+.nav__icon-option svg{
+    display: block;
+}
